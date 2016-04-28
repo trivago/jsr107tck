@@ -386,6 +386,7 @@ public class CacheManagerTest extends TestSupport {
 
     try {
        cacheManager.close();
+       fail();
     } catch (IllegalStateException e) {
       //good
     }
